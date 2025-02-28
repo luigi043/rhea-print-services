@@ -1,51 +1,123 @@
-<header class="text-center mt-5">
-  <h1>Bem-vindo à Rhea Print Services</h1>
-  <p>Sua solução para materiais de escritório e impressão.</p>
+<!-- Header com Banner -->
+<header class="text-center mt-0" style="background: url('assets/banner.jpg') no-repeat center center; background-size: cover; color: white; padding: 50px;">
+  <h1 class="display-4">Bem-vindo à Rhea Print Services</h1>
+  <p class="lead">Sua solução para materiais de escritório e impressão personalizada.</p>
+  <a routerLink="/products" class="btn btn-light btn-lg">Ver Produtos</a>
 </header>
 
 <!-- Navegação entre as páginas -->
-<nav>
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a routerLink="/products" class="nav-link btn btn-primary">Ver Produtos</a>
-    </li>
-    <li class="nav-item">
-      <a routerLink="/services" class="nav-link btn btn-outline-primary">Ver Serviços</a>
-    </li>
-    <li class="nav-item">
-      <a routerLink="/cart" class="nav-link btn btn-outline-secondary">Carrinho</a>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Rhea Print</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a routerLink="/products" class="nav-link">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/services" class="nav-link">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/cart" class="nav-link">Carrinho</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<section class="mt-5">
-  <h2>Sobre Nós</h2>
-  <article>
-    <p>Na Rhea Print Services, oferecemos uma ampla gama de produtos e serviços de impressão para atender às necessidades de escritórios, escolas e empresas.</p>
-    <p>Desde materiais de escritório a impressões personalizadas, temos tudo o que você precisa para suas tarefas diárias.</p>
-  </article>
-  
-  <aside class="mt-4">
-    <h3>Serviços Populares</h3>
-    <ul>
-      <li><strong>Impressão Digital</strong> - Alta qualidade e rapidez.</li>
-      <li><strong>Personalização de Camisetas</strong> - Design exclusivo para você.</li>
-      <li><strong>Encadernação</strong> - Soluções práticas e duráveis para seus documentos.</li>
-    </ul>
-  </aside>
+<!-- Cards de serviços e promoções -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Nossos Serviços e Produtos</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-lg">
+        <img src="assets/service1.jpg" class="card-img-top" alt="Impressão Digital">
+        <div class="card-body">
+          <h5 class="card-title">Impressão Digital</h5>
+          <p class="card-text">Impressões rápidas e de alta qualidade para suas necessidades.</p>
+          <a href="/services" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-lg">
+        <img src="assets/service2.jpg" class="card-img-top" alt="Personalização de Camisetas">
+        <div class="card-body">
+          <h5 class="card-title">Personalização de Camisetas</h5>
+          <p class="card-text">Crie camisetas personalizadas com o seu design exclusivo.</p>
+          <a href="/services" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-lg">
+        <img src="assets/service3.jpg" class="card-img-top" alt="Encadernação">
+        <div class="card-body">
+          <h5 class="card-title">Encadernação</h5>
+          <p class="card-text">Soluções práticas e duráveis para manter seus documentos organizados.</p>
+          <a href="/services" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Botões de navegação -->
-<div class="text-center mt-4">
-  <a routerLink="/previous-page" class="btn btn-secondary">Página Anterior</a>
-  <a routerLink="/next-page" class="btn btn-primary">Próxima Página</a>
-</div>
+<!-- Seção de Sobre -->
+<section class="container mt-5">
+  <h2>Sobre Nós</h2>
+  <p>Na Rhea Print Services, oferecemos uma ampla gama de produtos e serviços de impressão para atender às necessidades de escritórios, escolas e empresas. Desde materiais de escritório a impressões personalizadas, temos tudo o que você precisa para suas tarefas diárias.</p>
+</section>
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Produtos e Serviços em Destaque</h2>
+  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/service1.jpg" class="d-block w-100" alt="Impressão Digital">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Impressão Digital</h5>
+          <p>Impressões rápidas e de alta qualidade para suas necessidades.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/service2.jpg" class="d-block w-100" alt="Personalização de Camisetas">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Personalização de Camisetas</h5>
+          <p>Crie camisetas personalizadas com o seu design exclusivo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/service3.jpg" class="d-block w-100" alt="Encadernação">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Encadernação</h5>
+          <p>Soluções práticas e duráveis para manter seus documentos organizados.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
 
-<details class="mt-5">
-  <summary>Saiba mais sobre a Rhea Print Services</summary>
+<!-- Seção de Detalhes -->
+<details class="container mt-5">
+  <summary><h3>Saiba mais sobre a Rhea Print Services</h3></summary>
   <p>Estamos comprometidos em oferecer a melhor experiência em impressão e materiais de escritório. Seja você um estudante, um profissional ou um empresário, temos o produto ou serviço ideal para você!</p>
 </details>
+<section class="container mt-5" data-aos="fade-up">
+  <h2>Sobre Nós</h2>
+  <p>Na Rhea Print Services, oferecemos uma ampla gama de produtos e serviços de impressão para atender às necessidades de escritórios, escolas e empresas.</p>
+</section>
 
-<footer class="text-center mt-5">
+<!-- Footer -->
+<footer class="text-center mt-5 py-4 bg-dark text-white">
   <p>&copy; 2025 Rhea Print Services | Todos os direitos reservados</p>
 </footer>

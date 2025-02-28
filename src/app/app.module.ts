@@ -13,13 +13,19 @@ import { ProductsComponent } from './pages/products/products.component';
   imports: [
     BrowserModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    // Standalone components are handled via bootstrapApplication, no need to include them in declarations
   ],
   // Não inclua os componentes no array 'declarations'
   // Remove os componentes AppComponent, CartComponent e ProductsComponent da propriedade declarations.
+  // Do not use declarations here as these are standalone components
 })
 export class AppModule { }
 
 // Inicializar a aplicação com 'bootstrapApplication'
 import { bootstrapApplication } from '@angular/platform-browser';
-bootstrapApplication(AppComponent);
+bootstrapApplication(AppComponent, {
+  providers: [
+    // Any additional providers you may need for bootstrapping
+  ]
+});
