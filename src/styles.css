@@ -1,1 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+/* Definindo as cores */
+:root {
+    --azul-claro: #7EC8E2;
+    --azul-escuro: #006E8E;
+    --branco: #FFFFFF;
+    --cinza-claro: #D1D1D1;
+    --cinza-escuro: #333333;
+    --verde-claro: #A8E6CF;
+    --laranja: #FF9F00;
+  }
+  
+  /* Cor de fundo principal */
+  body {
+    background-color: var(--branco);
+    color: var(--cinza-escuro);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo de cabeçalho */
+  header {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Navegação */
+  nav {
+    margin-top: 20px;
+    background-color: var(--azul-claro);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  nav .nav-item .nav-link {
+    color: var(--branco);
+    font-weight: bold;
+  }
+  
+  nav .nav-item .nav-link:hover {
+    background-color: var(--verde-claro);
+    color: var(--azul-escuro);
+  }
+  
+  /* Botões */
+  button {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: var(--azul-escuro);
+  }
+  
+  /* Seção */
+  section {
+    margin-top: 40px;
+    background-color: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  section h2 {
+    color: var(--azul-escuro);
+  }
+  
+  section p {
+    font-size: 1rem;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+  
